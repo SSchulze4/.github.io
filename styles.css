@@ -1,0 +1,16 @@
+/* Simple pulsing animation */
+.pulse {
+    fill: steelblue;
+    animation: pulse-animation 2s infinite;
+}
+
+@keyframes pulse-animation {
+    0% { r: 30; }
+    50% { r: 40; }
+    100% { r: 30; }
+}
+
+/* Accessibility: visible focus outline */
+:focus {
+    outline: 3px solid orange;
+}
