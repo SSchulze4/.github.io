@@ -1,16 +1,101 @@
-/* Simple pulsing animation */
-.pulse {
-    fill: steelblue;
-    animation: pulse-animation 2s infinite;
+body {
+  background-color: rgba(33, 35, 37, 0.645);
+  font-family: "Times New Roman", serif;
+  margin: 0;
+  padding: 0;
 }
 
-@keyframes pulse-animation {
-    0% { r: 30; }
-    50% { r: 40; }
-    100% { r: 30; }
+h1 {
+  text-align: right;
 }
 
-/* Accessibility: visible focus outline */
-:focus {
-    outline: 3px solid orange;
+h4 {
+  color: rgb(255, 255, 0);
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+
+
+#homeContainer {
+  box-sizing: border-box;
+  background-color: rgba(3, 146, 255, 0.754);
+  border: 3px solid black;
+  padding: 20px;
+  font-size: 18px;
+}
+
+#booksContainer {
+  box-sizing: border-box;
+  border: 3px solid rgb(7, 65, 255);
+  padding: 20px;
+  background-color: gold;
+}
+
+#gamesContainer {
+  box-sizing: border-box;
+  border: 3px solid rgb(7, 65, 255);
+  padding: 20px;
+  background-color: #111; /* dark gray for readability */
+  color: white;
+}
+
+#mediaContainer {
+  box-sizing: border-box;
+  border: 3px solid rgb(21, 21, 21);
+  padding: 20px;
+  background-color: rgb(251, 151, 1);
+}
+
+
+.Italics {
+  font-style: italic;
+  font-weight: bolder;
+}
+
+.Highlight {
+  background-color: yellow;
+  color: black;
+  padding: 2px 4px;
+}
+
+
+footer {
+  text-align: center;
+  color: rgb(255, 255, 0);
+  padding: 10px 0;
+}
+
+nav {
+  background-color: rgb(180, 0, 0); /* darker red for better contrast */
+  padding: 10px;
+  color: rgb(255, 255, 0);
+  margin: 20px;
+  border: 2px solid black;
+}
+
+nav a {
+  color: yellow;
+  text-decoration: none;
+  margin-right: 15px;
+}
+
+nav a:hover,
+nav a:focus {
+  outline: 3px solid yellow;
+  text-decoration: none;
+}
+
+
+@media (max-width: 600px) {
+  body {
+    font-size: 14px;
+  }
+
+  nav {
+    padding: 10px;
+  }
+
+  h1 {
+    text-align: center;
+  }
 }
