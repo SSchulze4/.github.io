@@ -74,6 +74,24 @@ h4 {
   padding: 2px 4px;
 }
 
+@keyframes moveAcross {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+.moving-text {
+  display: inline-block;
+  font-weight: bold;
+  color: #FFFF99;
+  animation: moveAcross 8s linear infinite; /* moves continuously across the page */
+}
+
+
+
 
 
 
