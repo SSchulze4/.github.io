@@ -10,15 +10,24 @@ h1 {
 }
 
 h4 {
-  color: rgb(255, 255, 0);
+  color: #FFFF99; 
   margin-bottom: 10px;
   text-transform: uppercase;
 }
 
 
+
+
+
+
+
+
+
+
+
 #homeContainer {
   box-sizing: border-box;
-  background-color: rgba(3, 146, 255, 0.754);
+  background-color: #007ACC;
   border: 3px solid black;
   padding: 20px;
   font-size: 18px;
@@ -26,25 +35,32 @@ h4 {
 
 #booksContainer {
   box-sizing: border-box;
-  border: 3px solid rgb(7, 65, 255);
+  border: 3px solid #007ACC;
   padding: 20px;
-  background-color: gold;
+  background-color: #E6C200;
 }
 
 #gamesContainer {
   box-sizing: border-box;
-  border: 3px solid rgb(7, 65, 255);
+  border: 3px solid #007ACC;
   padding: 20px;
-  background-color: #111; /* dark gray for readability */
-  color: white;
+  background-color: #1C1C1C; 
+  color: #FFFFFF; 
 }
 
 #mediaContainer {
   box-sizing: border-box;
-  border: 3px solid rgb(21, 21, 21);
+  border: 3px solid #1C1C1C;
   padding: 20px;
-  background-color: rgb(251, 151, 1);
+  background-color: #F2A00D; 
+  color: #000000; 
 }
+
+
+
+
+
+
 
 
 .Italics {
@@ -59,31 +75,47 @@ h4 {
 }
 
 
+
+
+
+
+
 footer {
   text-align: center;
-  color: rgb(255, 255, 0);
+  color: #FFFF99; 
   padding: 10px 0;
 }
 
 nav {
-  background-color: rgb(180, 0, 0); /* darker red for better contrast */
+  background-color: #8B0000; 
   padding: 10px;
-  color: rgb(255, 255, 0);
+  color: #FFFF99;
   margin: 20px;
   border: 2px solid black;
 }
 
 nav a {
-  color: yellow;
+  color: #FFFF99;
   text-decoration: none;
   margin-right: 15px;
 }
 
 nav a:hover,
 nav a:focus {
-  outline: 3px solid yellow;
+  outline: 3px solid #FFFF99;
   text-decoration: none;
+  background-color: rgba(255, 255, 255, 0.1);
 }
+
+
+
+
+
+
+
+
+
+
 
 
 @media (max-width: 600px) {
@@ -97,5 +129,12 @@ nav a:focus {
 
   h1 {
     text-align: center;
+  }
+
+  #homeContainer,
+  #booksContainer,
+  #gamesContainer,
+  #mediaContainer {
+    padding: 15px; 
   }
 }
