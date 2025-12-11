@@ -71,6 +71,7 @@ h4 {
   display: inline-block;
   font-weight: bold;
   color: #FFFF99;
+  white-space: nowrap;
   animation: moveAcross 8s linear infinite;
 }
 
