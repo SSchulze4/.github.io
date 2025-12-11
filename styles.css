@@ -1,3 +1,7 @@
+.container {
+  background-color: transparent !important;
+}
+
 body {
   background-color: rgba(33, 35, 37, 0.645);
   font-family: "Times New Roman", serif;
@@ -123,6 +127,4 @@ nav a:focus {
   }
 }
 
-.container {
-  background-color: transparent !important;
-}
+
