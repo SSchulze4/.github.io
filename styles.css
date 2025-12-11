@@ -2,6 +2,57 @@ body {
   font-family: "Times New Roman", serif;
   margin: 0;
   padding: 0;
+  background-color: rgba(33, 35, 37, 0.645);
+}
+
+h1 {
+  text-align: right;
+}
+
+h4 {
+  color: #FFFF99;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+
+
+#homeContainer {
+  padding: 20px;
+  font-size: 18px;
+  background-color: transparent;
+}
+
+#booksContainer {
+  padding: 20px;
+  border: 3px solid #007ACC;
+  background-color: #E6C200;
+  color: #000000;
+}
+
+#gamesContainer {
+  padding: 20px;
+  border: 3px solid #007ACC;
+  background-color: #1C1C1C;
+  color: #FFFFFF;
+}
+
+#mediaContainer {
+  padding: 20px;
+  border: 3px solid #1C1C1C;
+  background-color: #F2A00D;
+  color: #000000;
+}
+
+
+.Italics {
+  font-style: italic;
+  font-weight: bolder;
+}
+
+.Highlight {
+  background-color: yellow;
+  color: black;
+  padding: 2px 4px;
 }
 
 
@@ -19,14 +70,44 @@ body {
 }
 
 
-.Highlight {
-  background-color: yellow;
-  color: black;
-  padding: 2px 4px;
+footer {
+  text-align: center;
+  color: #FFFF99;
+  padding: 10px 0;
+}
+
+nav {
+  background-color: #8B0000;
+  padding: 10px;
+  color: #FFFF99;
+  margin: 20px;
+  border: 2px solid black;
+}
+
+nav a {
+  color: #FFFF99;
+  text-decoration: none;
+  margin-right: 15px;
+}
+
+nav a:hover,
+nav a:focus {
+  outline: 3px solid #FFFF99;
+  text-decoration: none;
+  background-color: rgba(255, 255, 255, 0.1);
 }
 
 
-.Italics {
-  font-style: italic;
-  font-weight: bolder;
+@media (max-width: 600px) {
+  body { font-size: 14px; }
+  nav { padding: 10px; }
+  h1 { text-align: center; }
+
+  #homeContainer,
+  #booksContainer,
+  #gamesContainer,
+  #mediaContainer {
+    padding: 15px;
+  }
 }
+
