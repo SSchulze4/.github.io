@@ -1,44 +1,13 @@
-#homeContainer {
-  background-color: transparent;
-}
-
-#booksContainer {
-  background-color: #E6C200;
-  border: 3px solid #007ACC;
-}
-
-#gamesContainer {
-  background-color: #1C1C1C;
-  color: #FFFFFF;
-  border: 3px solid #007ACC;
-}
-
-#mediaContainer {
-  background-color: #F2A00D;
-  color: #000000;
-  border: 3px solid #1C1C1C;
-}
-
-
-.Italics {
-  font-style: italic;
-  font-weight: bolder;
-}
-
-.Highlight {
-  background-color: yellow;
-  color: black;
-  padding: 2px 4px;
+body {
+  font-family: "Times New Roman", serif;
+  margin: 0;
+  padding: 0;
 }
 
 
 @keyframes moveAcross {
-  0% {
-    transform: translateX(-100%);
-  }
-  100% {
-    transform: translateX(100%);
-  }
+  0% { transform: translateX(-100%); }
+  100% { transform: translateX(100%); }
 }
 
 .moving-text {
@@ -50,21 +19,14 @@
 }
 
 
-footer {
-  text-align: center;
-  color: #FFFF99;
-  padding: 10px 0;
+.Highlight {
+  background-color: yellow;
+  color: black;
+  padding: 2px 4px;
 }
 
 
-nav a {
-  text-decoration: none;
-  margin-right: 15px;
-}
-
-nav a:hover,
-nav a:focus {
-  outline: 3px solid #FFFF99;
-  text-decoration: none;
-  background-color: rgba(255, 255, 255, 0.1);
+.Italics {
+  font-style: italic;
+  font-weight: bolder;
 }
