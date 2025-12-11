@@ -122,3 +122,7 @@ nav a:focus {
     padding: 15px; 
   }
 }
+
+.container {
+  background-color: transparent !important;
+}
