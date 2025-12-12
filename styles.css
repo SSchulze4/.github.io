@@ -1,48 +1,43 @@
 body {
+  background-color: rgba(33, 35, 37, 0.645);
   font-family: "Times New Roman", serif;
   margin: 0;
   padding: 0;
-  background-color: rgba(33, 35, 37, 0.645);
   color: #FFFF99;
 }
+
 
 h1 {
   text-align: right;
 }
-
 h4 {
-  color: #FFFF99;
-  margin-bottom: 10px;
   text-transform: uppercase;
+  margin-bottom: 10px;
+  color: #FFFF99;
 }
 
+#homeContainer, #booksContainer, #gamesContainer, #mediaContainer {
+  box-sizing: border-box;
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
 
 #homeContainer {
-  padding: 20px;
-  border-radius: 10px;
-  background-color: rgba(33, 35, 37, 0.3); 
+  background-color: rgba(0, 122, 204, 0.7);
 }
-
 #booksContainer {
-  box-sizing: border-box;
-  border: 3px solid #007ACC;
-  padding: 20px;
   background-color: #E6C200;
-}
-
-#gamesContainer {
-  box-sizing: border-box;
   border: 3px solid #007ACC;
-  padding: 20px;
+}
+#gamesContainer {
   background-color: #1C1C1C;
+  border: 3px solid #007ACC;
   color: #FFFFFF;
 }
-
 #mediaContainer {
-  box-sizing: border-box;
-  border: 3px solid #1C1C1C;
-  padding: 20px;
   background-color: #F2A00D;
+  border: 3px solid #1C1C1C;
   color: #000000;
 }
 
@@ -51,19 +46,16 @@ h4 {
   font-style: italic;
   font-weight: bolder;
 }
-
 .Highlight {
   background-color: yellow;
   color: black;
   padding: 2px 4px;
 }
 
-
 @keyframes moveAcross {
   0% { transform: translateX(-100%); }
   100% { transform: translateX(100%); }
 }
-
 .moving-text {
   display: inline-block;
   font-weight: bold;
@@ -72,54 +64,34 @@ h4 {
   animation: moveAcross 8s linear infinite;
 }
 
-
-footer {
-  text-align: center;
-  color: #FFFF99;
-  padding: 10px 0;
-}
-
-
 nav {
   background-color: #8B0000;
   padding: 10px;
-  color: #FFFF99;
   margin: 20px 0;
   border: 2px solid black;
 }
-
 nav a {
   color: #FFFF99;
   text-decoration: none;
   margin-right: 15px;
 }
-
 nav a:hover,
 nav a:focus {
   outline: 3px solid #FFFF99;
   text-decoration: none;
-  background-color: rgba(255, 255, 255, 0.1);
+  background-color: rgba(255,255,255,0.1);
 }
 
+footer {
+  text-align: center;
+  padding: 10px 0;
+}
 
 @media (max-width: 600px) {
-  body {
-    font-size: 14px;
-  }
-
-  nav {
-    padding: 10px;
-  }
-
-  h1 {
-    text-align: center;
-  }
-
-  #homeContainer,
-  #booksContainer,
-  #gamesContainer,
-  #mediaContainer {
+  body { font-size: 14px; }
+  h1 { text-align: center; }
+  #homeContainer, #booksContainer, #gamesContainer, #mediaContainer {
     padding: 15px;
   }
+  nav { padding: 10px; }
 }
-
