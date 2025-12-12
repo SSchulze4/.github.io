@@ -3,6 +3,7 @@ body {
   margin: 0;
   padding: 0;
   background-color: rgba(33, 35, 37, 0.645);
+  color: #FFFF99;
 }
 
 h1 {
@@ -18,27 +19,29 @@ h4 {
 
 #homeContainer {
   padding: 20px;
-  font-size: 18px;
-  background-color: transparent;
+  border-radius: 10px;
+  background-color: rgba(33, 35, 37, 0.3); 
 }
 
 #booksContainer {
-  padding: 20px;
+  box-sizing: border-box;
   border: 3px solid #007ACC;
+  padding: 20px;
   background-color: #E6C200;
-  color: #000000;
 }
 
 #gamesContainer {
-  padding: 20px;
+  box-sizing: border-box;
   border: 3px solid #007ACC;
+  padding: 20px;
   background-color: #1C1C1C;
   color: #FFFFFF;
 }
 
 #mediaContainer {
-  padding: 20px;
+  box-sizing: border-box;
   border: 3px solid #1C1C1C;
+  padding: 20px;
   background-color: #F2A00D;
   color: #000000;
 }
@@ -76,11 +79,12 @@ footer {
   padding: 10px 0;
 }
 
+
 nav {
   background-color: #8B0000;
   padding: 10px;
   color: #FFFF99;
-  margin: 20px;
+  margin: 20px 0;
   border: 2px solid black;
 }
 
@@ -99,9 +103,17 @@ nav a:focus {
 
 
 @media (max-width: 600px) {
-  body { font-size: 14px; }
-  nav { padding: 10px; }
-  h1 { text-align: center; }
+  body {
+    font-size: 14px;
+  }
+
+  nav {
+    padding: 10px;
+  }
+
+  h1 {
+    text-align: center;
+  }
 
   #homeContainer,
   #booksContainer,
