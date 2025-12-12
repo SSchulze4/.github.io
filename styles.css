@@ -7,12 +7,3 @@
 h1 {
   animation: fadeGlow 3s infinite;
 }
-
-#movingName {
-  display: inline-block;
-  position: relative;   
-  left: -200px; 
-  white-space: nowrap;
-  font-weight: bold;
-  color: #FFFF99;
-}
