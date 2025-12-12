@@ -1,46 +1,51 @@
 <!DOCTYPE html>
 <html lang="en-US">
+
 <head>
   <meta charset="utf-8">
-  <title>Games Page</title>
+  <title>Games</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
-<body>
-  <h1>Games I Love to Play!</h1>
-  <hr>
-  <h3>In descending order (with a link to each Steam page):</h3>
 
-  <main>
-    <section id="gamesContainer">
-      <ol>
-        <li><a href="https://store.steampowered.com/app/1086940/Baldurs_Gate_3/">Baldur's Gate 3</a></li>
-        <li><a href="https://store.steampowered.com/app/47810/Dragon_Age_Origins__Ultimate_Edition/">Dragon Age: Origins</a></li>
-        <li><a href="https://store.steampowered.com/app/22380/Fallout_New_Vegas/">Fallout: New Vegas</a></li>
-        <li><a href="https://store.steampowered.com/app/1041720/Kingdoms_of_Amalur_ReReckoning/">Kingdoms of Amalur: Reckoning</a></li>
-        <li><a href="https://store.steampowered.com/app/1328670/Mass_Effect_Legendary_Edition/">Mass Effect Trilogy</a></li>
-        <li><a href="https://store.steampowered.com/app/388410/Darksiders_II_Deathinitive_Edition/">Darksiders 2</a></li>
-        <li><a href="https://store.steampowered.com/app/32370/STAR_WARS_Knights_of_the_Old_Republic/">KOTOR</a></li>
-        <li><a href="https://store.steampowered.com/app/205100/Dishonored/">Dishonored</a></li>
-        <li><a href="https://store.steampowered.com/app/976730/Halo_The_Master_Chief_Collection/">Halo Collection</a></li>
-        <li><a href="https://store.steampowered.com/app/1895880/Ratchet__Clank_Rift_Apart/">Ratchet & Clank: Rift Apart</a></li>
-      </ol>
-    </section>
+<body class="bg-dark text-light">
 
-    <nav aria-label="Navigation">
-      <h4>Navigation:</h4>
-      <ul>
-        <li><a href="index.html">Home Page</a></li>
-        <li><a href="books.html">Books</a></li>
-        <li><a href="games.html" aria-current="page">Games</a></li>
-        <li><a href="media.html">Media</a></li>
-      </ul>
-    </nav>
-  </main>
-
-  <footer>
+  <div class="container py-4">
+    <h1 class="text-end">Games I Love to Play!</h1>
     <hr>
-    <p><strong>Sean Schulze</strong></p>
-  </footer>
+    <h3>In descending order (with a link to each Steam page):</h3>
+
+    <main>
+      <section class="p-3 rounded border border-primary bg-secondary text-light">
+        <ol>
+          <li><a href="https://store.steampowered.com/app/1086940/Baldurs_Gate_3/" class="text-warning">Baldur's Gate 3</a></li>
+          <li><a href="https://store.steampowered.com/app/47810/Dragon_Age_Origins__Ultimate_Edition/" class="text-warning">Dragon Age: Origins</a></li>
+          <li><a href="https://store.steampowered.com/app/22380/Fallout_New_Vegas/" class="text-warning">Fallout: New Vegas</a></li>
+          <li><a href="https://store.steampowered.com/app/1041720/Kingdoms_of_Amalur_ReReckoning/" class="text-warning">Kingdoms of Amalur: Reckoning</a></li>
+          <li><a href="https://store.steampowered.com/app/1328670/Mass_Effect_Legendary_Edition/" class="text-warning">Mass Effect Trilogy</a></li>
+          <li><a href="https://store.steampowered.com/app/388410/Darksiders_II_Deathinitive_Edition/" class="text-warning">Darksiders 2</a></li>
+          <li><a href="https://store.steampowered.com/app/32370/STAR_WARS_Knights_of_the_Old_Republic/" class="text-warning">KOTOR</a></li>
+          <li><a href="https://store.steampowered.com/app/205100/Dishonored/" class="text-warning">Dishonored</a></li>
+          <li><a href="https://store.steampowered.com/app/976730/Halo_The_Master_Chief_Collection/" class="text-warning">Halo Collection</a></li>
+          <li><a href="https://store.steampowered.com/app/1895880/Ratchet__Clank_Rift_Apart/" class="text-warning">Ratchet & Clank: Rift Apart</a></li>
+        </ol>
+      </section>
+
+      <nav aria-label="Navigation" class="mt-4">
+        <h4 class="text-warning">Navigation:</h4>
+        <ul class="list-unstyled">
+          <li><a href="index.html" class="text-warning">Home Page</a></li>
+          <li><a href="books.html" class="text-warning">Books</a></li>
+          <li><a href="games.html" class="text-warning fw-bold">Games</a></li>
+          <li><a href="media.html" class="text-warning">Media</a></li>
+        </ul>
+      </nav>
+    </main>
+
+    <footer class="text-center mt-4 text-warning">
+      <hr>
+      <p><strong>Sean Schulze</strong></p>
+    </footer>
+  </div>
 </body>
 </html>
