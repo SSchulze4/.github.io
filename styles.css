@@ -17,3 +17,11 @@ body {
   background-color: #212325;
   color: #FFFF99;
 }
+#movingName {
+  display: inline-block;
+  position: relative;   
+  left: -200px; 
+  white-space: nowrap;
+  font-weight: bold;
+  color: #FFFF99;
+}
