@@ -1,14 +1,12 @@
-document.addEventListener("DOMContentLoaded", () => {
-  const colorBtn = document.getElementById("colorBtn");
-  const homeContainer = document.getElementById("homeContainer");
+const homeSection = document.getElementById('homeContainer');
+const colorBtn = document.getElementById('colorBtn');
 
-  if (colorBtn && homeContainer) {
-    colorBtn.addEventListener("click", () => {
-      if (homeContainer.style.backgroundColor === "rgba(0, 122, 204, 0.7)") {
-        homeContainer.style.backgroundColor = "rgba(33, 35, 37, 0.645)";
-      } else {
-        homeContainer.style.backgroundColor = "rgba(0, 122, 204, 0.7)";
-      }
-    });
-  }
-});
+if (homeSection && colorBtn) {
+  colorBtn.onclick = () => {
+    if (homeSection.style.backgroundColor === 'lightblue') {
+      homeSection.style.backgroundColor = 'rgba(33, 35, 37, 0.645)';
+    } else {
+      homeSection.style.backgroundColor = 'lightblue';
+    }
+  };
+}
