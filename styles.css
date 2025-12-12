@@ -25,3 +25,5 @@ body {
   font-weight: bold;
   color: #FFFF99;
 }
+
+body { border: 5px solid red; }
