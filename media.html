@@ -1,55 +1,56 @@
 <!DOCTYPE html>
 <html lang="en-US">
+
 <head>
   <meta charset="utf-8">
-  <title>Media Page</title>
+  <title>Media</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
-<body>
-  <h1>Media I Like to Watch! <span class="Italics">(Mainly YouTube)</span></h1>
-  <hr>
 
-  <main>
-    <section id="mediaContainer">
-      <section>
-        <p>The media I tend to like is either informative or humor-based.</p>
-        <h3>The humor-based:</h3>
+<body class="bg-dark text-light">
+
+  <div class="container py-4">
+    <h1 class="text-end">Media I Like to Watch! <span class="fst-italic fw-bold">(Mainly YouTube)</span></h1>
+    <hr>
+
+    <main>
+      <section class="p-3 rounded border border-dark bg-warning text-dark">
+        <p>The media I tend to like is either informative or humor based.</p>
+        <h3>The humor based:</h3>
         <ul>
-          <li><a href="https://www.youtube.com/@Dartigan">Dartagan</a>, sins video games.</li>
-          <li><a href="https://www.youtube.com/@theodd1sout">TheOdd1sOut</a>, animated shorts.</li>
-          <li><a href="https://www.youtube.com/dimension20show">Dimension 20</a>, TTRPGs.</li>
-          <li><a href="https://www.youtube.com/@thespiffingbrit">The Spiffing Brit</a>, finds ways to break game mechanics.</li>
+          <li><a href="https://www.youtube.com/@Dartigan" class="text-dark">Dartagan</a>, sins videogames.</li>
+          <li><a href="https://www.youtube.com/@theodd1sout" class="text-dark">TheOdd1sOut</a>, animated shorts.</li>
+          <li><a href="https://www.youtube.com/dimension20show" class="text-dark">Dimension 20</a>, TTRPGs.</li>
+          <li><a href="https://www.youtube.com/@thespiffingbrit" class="text-dark">The Spiffing Brit</a>, finds ways to break game mechanics.</li>
         </ul>
-      </section>
 
-      <section>
         <h3>The informative/educational:</h3>
         <ul>
-          <li><a href="https://www.youtube.com/@GameTheory">Game Theorist</a></li>
-          <li><a href="https://www.youtube.com/@mndiaye_97">Casual Geographic</a></li>
-          <li><a href="https://www.youtube.com/@AlternateHistoryHub">Alternate History Hub</a></li>
-          <li><a href="https://www.youtube.com/@zefrank">Ze Frank</a></li>
+          <li><a href="https://www.youtube.com/@GameTheory" class="text-dark">Game Theorist</a></li>
+          <li><a href="https://www.youtube.com/@mndiaye_97" class="text-dark">Casual Geographic</a></li>
+          <li><a href="https://www.youtube.com/@AlternateHistoryHub" class="text-dark">Alternate History Hub</a></li>
+          <li><a href="https://www.youtube.com/@zefrank" class="text-dark">Ze Frank</a></li>
         </ul>
+
+        <span class="bg-warning text-dark px-1 fst-italic">This text will be highlighted using a class.</span>
       </section>
 
-      <span class="Highlight"><em>This</em> text will be highlighted using a class.</span>
-    </section>
+      <nav aria-label="Navigation" class="mt-4">
+        <h4 class="text-warning">Navigation:</h4>
+        <ul class="list-unstyled">
+          <li><a href="index.html" class="text-warning">Home Page</a></li>
+          <li><a href="books.html" class="text-warning">Books</a></li>
+          <li><a href="games.html" class="text-warning">Games</a></li>
+          <li><a href="media.html" class="text-warning fw-bold">Media</a></li>
+        </ul>
+      </nav>
+    </main>
 
-    <nav aria-label="Navigation">
-      <h4>Navigation:</h4>
-      <ul>
-        <li><a href="index.html">Home Page</a></li>
-        <li><a href="books.html">Books</a></li>
-        <li><a href="games.html">Games</a></li>
-        <li><a href="media.html" aria-current="page">Media</a></li>
-      </ul>
-    </nav>
-  </main>
-
-  <footer>
-    <hr>
-    <p><strong>Sean Schulze</strong></p>
-  </footer>
+    <footer class="text-center mt-4 text-warning">
+      <hr>
+      <p><strong>Sean Schulze</strong></p>
+    </footer>
+  </div>
 </body>
 </html>
