@@ -8,15 +8,6 @@ h1 {
   animation: fadeGlow 3s infinite;
 }
 
-nav a.active {
-  text-decoration: underline;
-  color: yellow !important;
-}
-
-body {
-  background-color: #212325;
-  color: #FFFF99;
-}
 #movingName {
   display: inline-block;
   position: relative;   
@@ -25,5 +16,3 @@ body {
   font-weight: bold;
   color: #FFFF99;
 }
-
-body { border: 5px solid red; }
