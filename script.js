@@ -1,9 +1,9 @@
-document.getElementById("colorBtn").onclick = function () {
-  const container = document.getElementById("homeContainer");
+document.getElementById("colorBtn").addEventListener("click", () => {
+    const home = document.getElementById("homeContainer");
 
-  container.classList.add("fade-out");
+    home.classList.add("fade-hidden");
 
-  setTimeout(() => {
-    container.classList.remove("fade-out");
-  }, 800);
-};
+    setTimeout(() => {
+        home.classList.remove("fade-hidden");
+    }, 800);
+});
