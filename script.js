@@ -1,11 +1,15 @@
 document.addEventListener("DOMContentLoaded", function () {
-
-
   const colorBtn = document.getElementById("colorBtn");
+
   if (colorBtn) {
     colorBtn.addEventListener("click", function () {
-     
-      document.body.classList.toggle("bg-primary");
+      const container = document.querySelector(".container");
       
-      document.body.classList.toggle("text-light");
+      if (container.style.backgroundColor === "lightblue") {
+        container.style.backgroundColor = "rgba(33, 35, 37, 0.645)";
+      } else {
+        container.style.backgroundColor = "lightblue";
+      }
     });
+  }
+});
