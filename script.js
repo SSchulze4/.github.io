@@ -1,9 +1,6 @@
-document.getElementById("colorBtn").addEventListener("click", () => {
-    const home = document.getElementById("homeContainer");
-
-    home.classList.add("fade-hidden");
-
-    setTimeout(() => {
-        home.classList.remove("fade-hidden");
-    }, 800);
+document.querySelectorAll("nav a").forEach(link => {
+    link.addEventListener("click", () => {
+        document.querySelectorAll("nav a").forEach(a => a.classList.remove("active"));
+        link.classList.add("active");
+    });
 });
