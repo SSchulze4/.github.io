@@ -7,3 +7,4 @@ function move() {
   nameEl.style.left = pos + "px";
   requestAnimationFrame(move);
 }
+move();
