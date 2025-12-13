@@ -3,7 +3,7 @@ if (scrollSection) {
   let pos = scrollSection.parentElement.offsetHeight; 
 
   function scrollSectionFunc() {
-    pos -= 0.1; 
+    pos -= 0.5; 
     if (pos + scrollSection.offsetHeight < 0) {
       pos = scrollSection.parentElement.offsetHeight; 
     }
