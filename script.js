@@ -1,18 +1,15 @@
-<script>
-  const nameEl = document.getElementById('movingName');
+const page = document.getElementById('pageContent');
+if (page) {
+  let pos = page.parentElement.offsetHeight; // start below the container
 
-  
-  let pos = -nameEl.offsetWidth;
-
-  function moveFooter() {
-    pos += 2; 
-    if (pos > window.innerWidth) {
-      pos = -nameEl.offsetWidth; 
+  function scrollPage() {
+    pos -= 1; // scroll speed
+    if (pos + page.offsetHeight < 0) {
+      pos = page.parentElement.offsetHeight; // reset to bottom
     }
-    nameEl.style.position = "relative"; 
-    nameEl.style.left = pos + "px";
-    requestAnimationFrame(moveFooter);
+    page.style.top = pos + "px";
+    requestAnimationFrame(scrollPage);
   }
 
-  moveFooter();
-</script>
+  scrollPage();
+}
