@@ -1,9 +1,9 @@
 const scrollSection = document.getElementById('scrollSection');
 if (scrollSection) {
-  let pos = scrollSection.parentElement.offsetHeight;
+  let pos = scrollSection.parentElement.offsetHeight; 
 
   function scrollSectionFunc() {
-    pos -= 1; 
+    pos -= 0.1; 
     if (pos + scrollSection.offsetHeight < 0) {
       pos = scrollSection.parentElement.offsetHeight; 
     }
