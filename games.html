@@ -4,32 +4,13 @@
   <meta charset="utf-8">
   <title>Games</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
   <style>
-    @keyframes fadeGlow {
-      0% { opacity: 0.2; }
-      50% { opacity: 1; }
-      100% { opacity: 0.2; }
-    }
-    h1 {
-      animation: fadeGlow 3s infinite;
-    }
-
-
-    .scrollSectionContainer {
-      overflow: hidden;
-      height: 250px; 
-      position: relative;
-      border: 1px solid #ffc107; 
-      padding: 10px;
-      background-color: #212325;
-    }
-
-    .scrollSection {
-      position: absolute;
-      width: 100%;
-    }
+    @keyframes fadeGlow { 0%{opacity:0.2;}50%{opacity:1;}100%{opacity:0.2;} }
+    h1 { animation: fadeGlow 3s infinite; }
+    .scrollSectionContainer { overflow:hidden; height:250px; position:relative; border:1px solid #ffc107; padding:10px; background-color:#212325; }
+    .scrollSection { position:absolute; width:100%; }
+    footer { position: fixed; bottom:0; width:100%; }
   </style>
 </head>
 <body class="bg-dark text-warning">
@@ -37,28 +18,24 @@
   <div class="container py-4">
     <h1 class="mb-4">Games I Love to Play!</h1>
 
-    <main>
-      <div class="scrollSectionContainer">
-        <section id="scrollSection" class="scrollSection">
-          <ol>
-            <li><a href="https://store.steampowered.com/app/1086940/Baldurs_Gate_3/" class="text-warning">Baldur's Gate 3</a></li>
-            <li><a href="https://store.steampowered.com/app/47810/Dragon_Age_Origins__Ultimate_Edition/" class="text-warning">Dragon Age: Origins</a></li>
-            <li><a href="https://store.steampowered.com/app/22380/Fallout_New_Vegas/" class="text-warning">Fallout: New Vegas</a></li>
-            <li><a href="https://store.steampowered.com/app/1041720/Kingdoms_of_Amalur_ReReckoning/" class="text-warning">Kingdoms of Amalur: Reckoning</a></li>
-            <li><a href="https://store.steampowered.com/app/1328670/Mass_Effect_Legendary_Edition/" class="text-warning">Mass Effect Trilogy</a></li>
-            <li><a href="https://store.steampowered.com/app/388410/Darksiders_II_Deathinitive_Edition/" class="text-warning">Darksiders 2</a></li>
-            <li><a href="https://store.steampowered.com/app/32370/STAR_WARS_Knights_of_the_Old_Republic/" class="text-warning">KOTOR</a></li>
-            <li><a href="https://store.steampowered.com/app/205100/Dishonored/" class="text-warning">Dishonored</a></li>
-            <li><a href="https://store.steampowered.com/app/976730/Halo_The_Master_Chief_Collection/" class="text-warning">Halo Collection</a></li>
-            <li><a href="https://store.steampowered.com/app/1895880/Ratchet__Clank_Rift_Apart/" class="text-warning">Ratchet & Clank: Rift Apart</a></li>
-          </ol>
-        </section>
-      </div>
-    </main>
+    <div class="scrollSectionContainer">
+      <section id="scrollSection" class="scrollSection">
+        <ol>
+          <li><a href="https://store.steampowered.com/app/1086940/Baldurs_Gate_3/" class="text-warning">Baldur's Gate 3</a></li>
+          <li><a href="https://store.steampowered.com/app/47810/Dragon_Age_Origins__Ultimate_Edition/" class="text-warning">Dragon Age: Origins</a></li>
+          <li><a href="https://store.steampowered.com/app/22380/Fallout_New_Vegas/" class="text-warning">Fallout: New Vegas</a></li>
+          <li><a href="https://store.steampowered.com/app/1041720/Kingdoms_of_Amalur_ReReckoning/" class="text-warning">Kingdoms of Amalur: Reckoning</a></li>
+          <li><a href="https://store.steampowered.com/app/1328670/Mass_Effect_Legendary_Edition/" class="text-warning">Mass Effect Trilogy</a></li>
+          <li><a href="https://store.steampowered.com/app/388410/Darksiders_II_Deathinitive_Edition/" class="text-warning">Darksiders 2</a></li>
+          <li><a href="https://store.steampowered.com/app/32370/STAR_WARS_Knights_of_the_Old_Republic/" class="text-warning">KOTOR</a></li>
+          <li><a href="https://store.steampowered.com/app/205100/Dishonored/" class="text-warning">Dishonored</a></li>
+          <li><a href="https://store.steampowered.com/app/976730/Halo_The_Master_Chief_Collection/" class="text-warning">Halo Collection</a></li>
+          <li><a href="https://store.steampowered.com/app/1895880/Ratchet__Clank_Rift_Apart/" class="text-warning">Ratchet & Clank: Rift Apart</a></li>
+        </ol>
+      </section>
+    </div>
 
-    <footer class="bg-dark text-warning py-2 mt-4 text-center fw-bold">
-      Sean Schulze
-    </footer>
+    <footer class="bg-dark text-warning py-2 mt-4 text-center fw-bold">Sean Schulze</footer>
   </div>
 
   <script src="script.js"></script>
