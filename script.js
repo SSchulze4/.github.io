@@ -1,18 +1,18 @@
-document.addEventListener("DOMContentLoaded", () => {
+<script>
   const nameEl = document.getElementById('movingName');
 
-  if (!nameEl) return; // prevent errors on pages without footer
+  
+  let pos = -nameEl.offsetWidth;
 
-  let pos = -300;
-
-  function move() {
-    pos += 2; // speed
+  function moveFooter() {
+    pos += 2; 
     if (pos > window.innerWidth) {
-      pos = -nameEl.offsetWidth; // restart left side
+      pos = -nameEl.offsetWidth; 
     }
+    nameEl.style.position = "relative"; 
     nameEl.style.left = pos + "px";
-    requestAnimationFrame(move);
+    requestAnimationFrame(moveFooter);
   }
 
-  move();
-});
+  moveFooter();
+</script>
