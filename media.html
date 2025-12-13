@@ -5,57 +5,42 @@
   <title>Media</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-    <style>
-    @keyframes fadeGlow {
-      0%   { opacity: 0.2; }
-      50%  { opacity: 1; }
-      100% { opacity: 0.2; }
-    }
-
-    h1 {
-      animation: fadeGlow 3s infinite;
-    }
+  <style>
+    @keyframes fadeGlow { 0%{opacity:0.2;}50%{opacity:1;}100%{opacity:0.2;} }
+    h1 { animation: fadeGlow 3s infinite; }
+    .scrollSectionContainer { overflow:hidden; height:250px; position:relative; border:1px solid #ffc107; padding:10px; background-color:#212325; }
+    .scrollSection { position:absolute; width:100%; }
+    footer { position: fixed; bottom:0; width:100%; }
   </style>
 </head>
-<body class="bg-dark text-light">
+<body class="bg-dark text-warning">
 
-<div class="container py-4">
-  <h1 class="text-end">Media I Like to Watch! <span class="fst-italic fw-bold">(Mainly YouTube)</span></h1>
-  <hr>
+  <div class="container py-4">
+    <h1 class="mb-4">Media I Like to Watch!</h1>
 
-  <main>
-    <section class="p-3 rounded border border-dark bg-warning text-dark">
-      <p>The media I tend to like is either informative or humor based.</p>
-      <h3>The humor based:</h3>
-      <ul>
-        <li><a href="https://www.youtube.com/@Dartigan" class="text-dark">Dartagan</a>, sins videogames.</li>
-        <li><a href="https://www.youtube.com/@theodd1sout" class="text-dark">TheOdd1sOut</a>, animated shorts.</li>
-        <li><a href="https://www.youtube.com/dimension20show" class="text-dark">Dimension 20</a>, TTRPGs.</li>
-        <li><a href="https://www.youtube.com/@thespiffingbrit" class="text-dark">The Spiffing Brit</a>, finds ways to break game mechanics.</li>
-      </ul>
+    <div class="scrollSectionContainer">
+      <section id="scrollSection" class="scrollSection">
+        <h3>The humor based:</h3>
+        <ul>
+          <li><a href="https://www.youtube.com/@Dartigan" class="text-warning">Dartagan</a>, sins videogames.</li>
+          <li><a href="https://www.youtube.com/@theodd1sout" class="text-warning">TheOdd1sOut</a>, animated shorts.</li>
+          <li><a href="https://www.youtube.com/dimension20show" class="text-warning">Dimension 20</a>, TTRPGs.</li>
+          <li><a href="https://www.youtube.com/@thespiffingbrit" class="text-warning">The Spiffing Brit</a>, finds ways to break game mechanics.</li>
+        </ul>
 
-      <h3>The informative/educational:</h3>
-      <ul>
-        <li><a href="https://www.youtube.com/@GameTheory" class="text-dark">Game Theorist</a></li>
-        <li><a href="https://www.youtube.com/@mndiaye_97" class="text-dark">Casual Geographic</a></li>
-        <li><a href="https://www.youtube.com/@AlternateHistoryHub" class="text-dark">Alternate History Hub</a></li>
-        <li><a href="https://www.youtube.com/@zefrank" class="text-dark">Ze Frank</a></li>
-      </ul>
+        <h3>The informative/educational:</h3>
+        <ul>
+          <li><a href="https://www.youtube.com/@GameTheory" class="text-warning">Game Theorist</a></li>
+          <li><a href="https://www.youtube.com/@mndiaye_97" class="text-warning">Casual Geographic</a></li>
+          <li><a href="https://www.youtube.com/@AlternateHistoryHub" class="text-warning">Alternate History Hub</a></li>
+          <li><a href="https://www.youtube.com/@zefrank" class="text-warning">Ze Frank</a></li>
+        </ul>
+      </section>
+    </div>
 
-      <span class="bg-warning text-dark px-1 fst-italic">This text will be highlighted using a class.</span>
-    </section>
+    <footer class="bg-dark text-warning py-2 mt-4 text-center fw-bold">Sean Schulze</footer>
+  </div>
 
-    <nav class="mt-4">
-      <h4 class="text-warning">Navigation:</h4>
-      <ul class="list-unstyled">
-        <li><a href="index.html" class="text-warning">Home Page</a></li>
-        <li><a href="books.html" class="text-warning">Books</a></li>
-        <li><a href="games.html" class="text-warning">Games</a></li>
-        <li><a href="media.html" class="text-warning fw-bold">Media</a></li>
-      </ul>
-    </nav>
-  </main>
-</div>
-
+  <script src="script.js"></script>
 </body>
 </html>
