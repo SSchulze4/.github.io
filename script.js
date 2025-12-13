@@ -1,15 +1,15 @@
-const page = document.getElementById('pageContent');
-if (page) {
-  let pos = page.parentElement.offsetHeight; // start below the container
+const scrollSection = document.getElementById('scrollSection');
+if (scrollSection) {
+  let pos = scrollSection.parentElement.offsetHeight;
 
-  function scrollPage() {
-    pos -= 1; // scroll speed
-    if (pos + page.offsetHeight < 0) {
-      pos = page.parentElement.offsetHeight; // reset to bottom
+  function scrollSectionFunc() {
+    pos -= 1; 
+    if (pos + scrollSection.offsetHeight < 0) {
+      pos = scrollSection.parentElement.offsetHeight; 
     }
-    page.style.top = pos + "px";
-    requestAnimationFrame(scrollPage);
+    scrollSection.style.top = pos + "px";
+    requestAnimationFrame(scrollSectionFunc);
   }
 
-  scrollPage();
+  scrollSectionFunc();
 }
