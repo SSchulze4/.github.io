@@ -2,57 +2,74 @@
 <html lang="en-US">
 <head>
   <meta charset="utf-8">
-  <title>Home</title>
+  <title>Home Page</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-
-    <style>
+  <style>
+    
     @keyframes fadeGlow {
-      0%   { opacity: 0.2; }
-      50%  { opacity: 1; }
+      0% { opacity: 0.2; }
+      50% { opacity: 1; }
       100% { opacity: 0.2; }
     }
-
     h1 {
       animation: fadeGlow 3s infinite;
     }
+
+    
+    #scrollContainer {
+      overflow: hidden;
+      height: 90vh; 
+      position: relative;
+    }
+
+    #pageContent {
+      position: absolute;
+      top: 100%; 
+      width: 100%;
+    }
+
+    
+    footer {
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+    }
   </style>
 </head>
-<body class="bg-dark text-light">
+<body class="bg-dark text-warning">
 
-<div class="container py-4">
-  <h1 class="text-end">Home Page</h1>
-  <hr>
-  <main>
-    <section class="p-3 rounded bg-secondary bg-opacity-75">
-      <p>There are a few topics I would like to cover that I believe would be very useful to help someone get to know me. Those topics will be the books I like to read, the games I love to play, and finally the media I watch. You can find each under its own link in the navigation menu near the bottom of the page. Before then I would like to quickly list out some information that does not neatly fit under those categories.</p>
+  
+  <div id="scrollContainer" class="container py-4">
+    <div id="pageContent">
+      <h1 class="mb-4">Home Page</h1>
+      <p>Welcome to my home page!</p>
+      <p>There are a few topics I would like to cover: books I like to read, games I love to play, and media I watch.</p>
       <ol>
         <li>I am a <em>huge</em> nerd.</li>
         <li>I am pursuing a degree in Integrated Computer Science with a minor in business.</li>
         <li>I <strong>don't</strong> like sports or the outdoors.</li>
         <li>I have the aesthetic sense of a rock.</li>
         <li>I believe that pizza is perfect cuisine.</li>
-        <li>I live with my sister and her family, yes my nephews are little monsters who terrorize me whenever they get the chance.</li>
+        <li>I live with my sister and her family; my nephews are little monsters who terrorize me whenever they get the chance.</li>
       </ol>
-    </section>
 
-    <nav class="mt-4">
-      <h4>Navigation:</h4>
-      <ul class="list-unstyled">
-        <li><a href="index.html" class="text-warning fw-bold active">Home Page</a></li>
-        <li><a href="books.html" class="text-warning">Books</a></li>
-        <li><a href="games.html" class="text-warning">Games</a></li>
-        <li><a href="media.html" class="text-warning">Media</a></li>
-      </ul>
-    </nav>
-    <script>
-    <footer>
-      <p id="movingName">Sean Schulze</p>
-    </footer>
-    
-  </main>
-</div>
-</script>
+      <nav aria-label="Main Navigation" class="mt-4">
+        <a href="index.html" class="text-warning fw-bold me-3">Home</a>
+        <a href="books.html" class="text-warning me-3">Books</a>
+        <a href="games.html" class="text-warning me-3">Games</a>
+        <a href="media.html" class="text-warning">Media</a>
+      </nav>
+    </div>
+  </div>
+
+  
+  <footer class="bg-dark text-warning py-2 text-center fw-bold">
+    Sean Schulze
+  </footer>
+
+  
+  <script src="script.js"></script>
+
 </body>
 </html>
-
